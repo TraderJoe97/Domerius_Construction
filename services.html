@@ -41,31 +41,30 @@
             <li><a href="contact.html" class="text-white hover:text-gold">Contact</a></li>
         </ul>
     </header>
-
-    <!-- Services Section -->
-    <section class="py-12 md:py-16 bg-white text-black">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-6 bg-black text-white rounded shadow-lg hover:bg-gold ">
-                    <h3 class="text-2xl font-semibold">Architectural Services</h3>
-                    <p>We offer comprehensive architectural services, including plan designs and consultation for residential and commercial buildings.</p>
-                </div>
-                <div class="p-6 bg-black text-white rounded shadow-lg hover:bg-gold ">
-                    <h3 class="text-2xl font-semibold">Construction Management</h3>
-                    <p>From project initiation to completion, our construction management ensures efficiency, quality, and customer satisfaction.</p>
-                </div>
-                <div class="p-6 bg-black text-white rounded shadow-lg hover:bg-gold ">
-                    <h3 class="text-2xl font-semibold">Project Development</h3>
-                    <p>Our team handles construction monitoring, ensuring materials and labor are managed effectively.</p>
-                </div>
-                <div class="p-6 bg-black text-white rounded shadow-lg hover:bg-gold ">
-                    <h3 class="text-2xl font-semibold">Training & Development</h3>
-                    <p>We provide training programs to develop skills in construction management and architectural services.</p>
-                </div>
-            </div>
+    <!-- Services -->
+    <section class="w-full h-full px-5 md:py-8 bg-white text-black flex flex-col items-center">
+    <div class="text-center mb-6 w-full">
+        <h2 class="text-3xl md:text-4xl font-bold text-gold">Our Services</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-screen-lg mx-auto ">
+        <div class="flex flex-col justify-center p-6 bg-black text-white rounded-lg shadow-lg ">
+            <h3 class="text-2xl font-semibold">Architectural Services</h3>
+            <p>We offer comprehensive architectural services, including plan designs and consultation for residential and commercial buildings.</p>
         </div>
-    </section>
+        <div class="flex flex-col justify-center p-6 bg-black text-white rounded-lg shadow-lg ">
+            <h3 class="text-2xl font-semibold">Construction Management</h3>
+            <p>From project initiation to completion, our construction management ensures efficiency, quality, and customer satisfaction.</p>
+        </div>
+        <div class="flex flex-col justify-center p-6 bg-black text-white rounded-lg shadow-lg ">
+            <h3 class="text-2xl font-semibold">Project Development</h3>
+            <p>Our team handles construction monitoring, ensuring materials and labor are managed effectively.</p>
+        </div>
+        <div class="flex flex-col justify-center p-6 bg-black text-white rounded-lg shadow-lg ">
+            <h3 class="text-2xl font-semibold">Training & Development</h3>
+            <p>We provide training programs to develop skills in construction management and architectural services.</p>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-black text-white py-6">
@@ -73,5 +72,12 @@
             <p>&copy; 2024 Domerius Services. All rights reserved.</p>
         </div>
     </footer>
+        <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

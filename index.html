@@ -11,7 +11,7 @@
             .bg-gold { background-color: #DAA520; }
             .text-gold { color: #DAA520; }
             .bg-gradient-gold {
-                background: linear-gradient(90deg, #e2c624, #DAA520);
+                background: linear-gradient(90deg,#DAA520, #d3b81f, #DAA520);
                 -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
@@ -23,22 +23,29 @@
     <!-- Header Section -->
     <header class="bg-black text-white">
         <nav class="flex justify-between p-5 items-center">
-            <h1 class="text-gold text-3xl font-bold">Domerius Services</h1>
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-3">
+                <img src="logo.png" alt="Domerius Logo" class="w-12 h-12 md:w-16 md:h-16 object-contain"> <!-- Logo -->
+                <h1 class="text-gold text-2xl md:text-3xl font-bold">Domerius Services</h1> <!-- Title -->
+            </div>
+            <!-- Navigation Links -->
             <ul class="hidden md:flex space-x-6">
-                <li><a href="#" class="text-white hover:text-gold">Home</a></li>
-                <li><a href="#" class="text-white hover:text-gold">About</a></li>
-                <li><a href="#" class="text-white hover:text-gold">Services</a></li>
-                <li><a href="#" class="text-white hover:text-gold">Projects</a></li>
-                <li><a href="#" class="text-white hover:text-gold">Contact</a></li>
+                <li><a href="index.html" class="text-white hover:text-gold">Home</a></li>
+                <li><a href="about.html" class="text-white hover:text-gold">About</a></li>
+                <li><a href="services.html" class="text-white hover:text-gold">Services</a></li>
+                <li><a href="projects.html" class="text-gold hover:text-gold">Projects</a></li>
+                <li><a href="contact.html" class="text-white hover:text-gold">Contact</a></li>
             </ul>
+            <!-- Mobile Menu Button -->
             <button id="menu-toggle" class="md:hidden text-white">Menu</button>
         </nav>
+        <!-- Mobile Menu -->
         <ul id="mobile-menu" class="md:hidden flex-col space-y-4 hidden p-5 bg-black">
-            <li><a href="#" class="text-white hover:text-gold">Home</a></li>
-            <li><a href="#" class="text-white hover:text-gold">About</a></li>
-            <li><a href="#" class="text-white hover:text-gold">Services</a></li>
-            <li><a href="#" class="text-white hover:text-gold">Projects</a></li>
-            <li><a href="#" class="text-white hover:text-gold">Contact</a></li>
+            <li><a href="index.html" class="text-white hover:text-gold">Home</a></li>
+            <li><a href="about.html" class="text-white hover:text-gold">About</a></li>
+            <li><a href="services.html" class="text-white hover:text-gold">Services</a></li>
+            <li><a href="projects.html" class="text-white hover:text-gold">Projects</a></li>
+            <li><a href="contact.html" class="text-white hover:text-gold">Contact</a></li>
         </ul>
     </header>
 
@@ -46,7 +53,7 @@
     <section class="relative bg-cover bg-center h-screen" style="background-image: url('construction-bg.jpg');">
         <div class="absolute inset-0 bg-black opacity-70"></div>
         <div class="relative z-10 text-center flex flex-col items-center justify-center h-full space-y-6 p-4">
-            <h2 class="text-3xl md:text-5xl font-bold text-gold">Bringing Your Vision to Life</h2>
+            <h2 class="text-3xl md:text-5xl font-bold text-gold bg-gradient-gold">Bringing Your Vision to Life</h2>
             <p class="text-md md:text-lg text-white">Architectural Services | Construction Management | Project Management</p>
             <a href="#" class="px-6 md:px-8 py-3 md:py-4 bg-gold text-black font-semibold rounded hover:bg-white">Get Started</a>
         </div>
@@ -55,7 +62,7 @@
     <!-- About Section -->
     <section class="py-12 md:py-16 bg-white text-black">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6 md:mb-8">About Us</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6 md:mb-8 bg-gradient-gold">About Us</h2>
             <p class="max-w-2xl md:max-w-4xl mx-auto text-md md:text-lg">
                 Domerius Services was founded in 2016 to provide top-notch architectural, construction, and project management services. Our focus is to bring your dreams and visions to life with expertise in construction monitoring, plan designs, and material management.
             </p>
@@ -65,17 +72,17 @@
     <!-- Services Section -->
     <section class="py-12 md:py-16 bg-black text-white">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6 md:mb-8">Our Services</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6 md:mb-8 bg-gradient-gold">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-                <div class="service-card p-6 bg-white text-black rounded shadow-lg hover:bg-gold hover:text-white">
+                <div class="service-card p-6 bg-white text-black rounded shadow-lg ">
                     <h3 class="text-xl md:text-2xl font-semibold">Architectural Services</h3>
                     <p>Complete architectural services for residential and commercial projects.</p>
                 </div>
-                <div class="service-card p-6 bg-white text-black rounded shadow-lg hover:bg-gold hover:text-white">
+                <div class="service-card p-6 bg-white text-black rounded shadow-lg ">
                     <h3 class="text-xl md:text-2xl font-semibold">Construction Management</h3>
                     <p>Efficient project management from start to completion.</p>
                 </div>
-                <div class="service-card p-6 bg-white text-black rounded shadow-lg hover:bg-gold hover:text-white">
+                <div class="service-card p-6 bg-white text-black rounded shadow-lg ">
                     <h3 class="text-xl md:text-2xl font-semibold">Project Development</h3>
                     <p>Specialized services for construction monitoring and material management.</p>
                 </div>
@@ -86,8 +93,8 @@
     <!-- Contact Section -->
     <section class="py-12 md:py-16 bg-white text-black">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6 md:mb-8">Get in Touch</h2>
-            <form netlify action="#" class="max-w-xl md:max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6 md:mb-8 bg-gradient-gold">Get in Touch</h2>
+            <form action="#" class="max-w-xl md:max-w-2xl mx-auto" netlify>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <input type="text" placeholder="Your Name" class="border p-3 md:p-4 rounded w-full">
                     <input type="email" placeholder="Your Email" class="border p-3 md:p-4 rounded w-full">

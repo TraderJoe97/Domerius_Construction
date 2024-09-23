@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Domerius Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @layer utilities {
+            .bg-gold { background-color: #DAA520; }
+            .text-gold { color: #DAA520; }
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Header -->
+    <header class="bg-black text-white p-5">
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="logo.png" alt="Domerius Logo" class="w-12 h-12 object-contain">
+                <h1 class="text-gold text-3xl font-bold">Domerius Services</h1>
+            </div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-white hover:text-gold">Home</a></li>
+                <li><a href="about.html" class="text-white hover:text-gold">About</a></li>
+                <li><a href="projects.html" class="text-white hover:text-gold">Projects</a></li>
+                <li><a href="contact.html" class="text-white hover:text-gold">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-12 md:py-16 bg-white text-black">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-black text-white rounded shadow-lg hover:bg-gold hover:text-black">
+                    <h3 class="text-2xl font-semibold">Architectural Services</h3>
+                    <p>We offer comprehensive architectural services, including plan designs and consultation for residential and commercial buildings.</p>
+                </div>
+                <div class="p-6 bg-black text-white rounded shadow-lg hover:bg-gold hover:text-black">
+                    <h3 class="text-2xl font-semibold">Construction Management</h3>
+                    <p>From project initiation to completion, our construction management ensures efficiency, quality, and customer satisfaction.</p>
+                </div>
+                <div class="p-6 bg-black text-white rounded shadow-lg hover:bg-gold hover:text-black">
+                    <h3 class="text-2xl font-semibold">Project Development</h3>
+                    <p>Our team handles construction monitoring, ensuring materials and labor are managed effectively.</p>
+                </div>
+                <div class="p-6 bg-black text-white rounded shadow-lg hover:bg-gold hover:text-black">
+                    <h3 class="text-2xl font-semibold">Training & Development</h3>
+                    <p>We provide training programs to develop skills in construction management and architectural services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Domerius Services. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

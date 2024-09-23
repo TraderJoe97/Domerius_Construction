@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domerius Services - Contact Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         /* Custom Colors */
         @layer utilities {
@@ -17,36 +18,35 @@
     <!-- Header Section -->
     <header class="bg-black text-white">
         <nav class="flex justify-between p-5 items-center">
-            <!-- Logo Section -->
             <div class="flex items-center space-x-3">
-                <img src="logo.png" alt="Domerius Logo" class="w-12 h-12 md:w-16 md:h-16 object-contain"> <!-- Logo -->
-                <h1 class="text-gold text-2xl md:text-3xl font-bold">Domerius Services</h1> <!-- Title -->
+                <img src="logo.png" alt="Domerius Logo" class="w-12 h-12 md:w-16 md:h-16 object-contain">
+                <h1 class="text-gold text-2xl md:text-3xl font-bold">Domerius Services</h1>
             </div>
-            <!-- Navigation Links -->
             <ul class="hidden md:flex space-x-6">
                 <li><a href="index.html" class="text-white hover:text-gold">Home</a></li>
                 <li><a href="about.html" class="text-white hover:text-gold">About</a></li>
                 <li><a href="services.html" class="text-white hover:text-gold">Services</a></li>
-                <li><a href="projects.html" class="text-gold hover:text-gold">Projects</a></li>
-                <li><a href="contact.html" class="text-white hover:text-gold">Contact</a></li>
+                <li><a href="projects.html" class="text-white hover:text-gold">Projects</a></li>
+                <li><a href="contact.html" class="text-gold hover:text-gold">Contact</a></li>
             </ul>
-            <!-- Mobile Menu Button -->
             <button id="menu-toggle" class="md:hidden text-white">Menu</button>
         </nav>
-        <!-- Mobile Menu -->
         <ul id="mobile-menu" class="md:hidden flex-col space-y-4 hidden p-5 bg-black">
             <li><a href="index.html" class="text-white hover:text-gold">Home</a></li>
             <li><a href="about.html" class="text-white hover:text-gold">About</a></li>
             <li><a href="services.html" class="text-white hover:text-gold">Services</a></li>
             <li><a href="projects.html" class="text-white hover:text-gold">Projects</a></li>
-            <li><a href="contact.html" class="text-white hover:text-gold">Contact</a></li>
+            <li><a href="contact.html" class="text-gold hover:text-gold">Contact</a></li>
         </ul>
     </header>
 
     <!-- Contact Section -->
     <section class="py-12 md:py-16 bg-white text-black">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6 md:mb-8 bg-gradient-gold">Get in Touch</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6 md:mb-8">Get in Touch</h2>
+            <p class="max-w-2xl mx-auto text-lg mb-10">Have any questions or want to discuss your next project? Reach out to us and we'll be in touch as soon as possible.</p>
+
+            <!-- Contact Form -->
             <form action="#" class="max-w-xl md:max-w-2xl mx-auto" name="contact-form_1" method="POST" data-netlify="true" onSubmit="submit">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <input name="Name" type="text" placeholder="Your Name" class="border p-3 md:p-4 rounded w-full">
@@ -55,6 +55,14 @@
                 <textarea name="Message" placeholder="Your Message" class="border p-3 md:p-4 rounded mt-4 w-full"></textarea>
                 <button type="submit" class="mt-4 md:mt-6 px-6 md:px-8 py-3 md:py-4 bg-gold text-black font-semibold rounded hover:bg-black hover:text-white">Send Message</button>
             </form>
+
+            <!-- WhatsApp Link -->
+            <div class="mt-10">
+                <p class="text-lg font-semibold mb-2">Or contact us via WhatsApp:</p>
+                <a href="https://wa.me/+27813796535" target="_blank" class="inline-flex items-center px-6 py-3 bg-gold text-black font-semibold rounded hover:bg-black hover:text-white">
+                    <i class="fab fa-whatsapp text-2xl mr-2"></i> Message us on WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 

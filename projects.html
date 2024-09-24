@@ -150,7 +150,7 @@
     <script>
         // Carousel Slider Variables
         let currentSlide = 0;
-        const totalImages = 48; // Total number of images
+        const totalImages = 45; // Total number of images
         const slidesContainer = document.getElementById('carousel-slides');
         const dotsContainer = document.getElementById('dots-container');
 
@@ -200,11 +200,19 @@
             changeSlide(1);
         });
 
+        /**
+         * Changes the current slide by the given direction, and updates the carousel
+         * @param {number} direction the direction to change the slide, -1 for previous, 1 for next
+         */
         function changeSlide(direction) {
             currentSlide = (currentSlide + direction + totalImages) % totalImages;
             updateCarousel();
         }
 
+
+        /**
+         * Updates the carousel by removing the active class from all slides and dots, and adds it to the current slide and dot
+         */
         function updateCarousel() {
             const slides = document.querySelectorAll('.carousel-slide');
             const dots = document.querySelectorAll('.dot');
